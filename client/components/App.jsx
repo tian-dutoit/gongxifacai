@@ -1,11 +1,27 @@
 import React from 'react'
+import {connect} from 'react-redux'
+
+import Cookie from './Cookie'
 import Birthday from './Birthday'
+import {showCookie} from '../actions/app'
 
-const App = () => (
-  <div className='app'>
-  <Birthday/>
-  <h1>test</h1>
-  </div>
-)
+const App = (props) => {
+  return (
+    <div className='app'>
+      <Birthday/>
+        <h1>test</h1>
+      {props.showCookie && <Cookie />}
+      <button onClick = {() => props.dispatch(showCookie())} > press to show cookie </button>
+    </div>
+  )
+}
 
-export default App
+
+const mapStateToProps = (state) => {
+  return {
+    showCookie: state.showCookie
+  }
+}
+
+
+export default connect(mapStateToProps)(App)
