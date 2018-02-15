@@ -1,4 +1,4 @@
-import {BREAK_COOKIE} from '../actions/cookie.js'
+import {BREAK_COOKIE} from '../actions/breakCookie.js'
 
 export const breakCookie = (state = false, action) => {
   switch (action.type) {
