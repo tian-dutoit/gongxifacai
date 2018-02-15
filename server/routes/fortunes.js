@@ -1,14 +1,20 @@
-// const express = require('express')
-// const request = require('superagent')
-// const bodyParser = require('body-parser')
+const express = require('express')
+const request = require('superagent')
+const bodyParser = require('body-parser')
+const router = express.Router()
+const zod = require('../zodiac')
 
-// const router = express.Router()
+router.use(bodyParser.json())
 
-// router.use(bodyParser.json())
+const zodiac = {
+  zodiac: ['rooster', 'pig']
+}
 
-// router.get('/', (req, res) => {
-//   request
-//     .get
-// })
+router.post('/', (req, res) => {
+  const birthyear = req.body.birthyear
+  const animal = zod.getZodiac(birthyear)
+  console.log(zodiac)
+  res.json({animal})
+})
 
-// module.exports = router
+module.exports = router
