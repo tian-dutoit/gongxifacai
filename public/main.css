@@ -2,3 +2,16 @@
   color: red;
   font-weight: bold;
 }
+
+body{
+  background-image: url("./images/back-ground.jpg");
+  font-family: ChineseTakeaway;
+  color: #f3ae08;
+}
+font{
+  color: #f3ae08;
+}
+@font-face {
+  font-family: ChineseTakeaway;
+  src: url("/font/CHINESETAKEAWAY.ttf");
+}
