@@ -7,7 +7,7 @@ router.use(bodyParser.json())
 
 router.get('/', (req, res) => {
   return request
-    .get('https://helloacm.com/api/fortune')
+    .get('http://www.yerkee.com/api/fortune/wisdom')
     .then(result => {
       const text = result.body
       res.json({text})
