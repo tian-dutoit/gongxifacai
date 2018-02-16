@@ -9,7 +9,6 @@ const App = (props) => {
   return (
     <div className='app'>
       <Birthday/>
-      <h1>test</h1>
       {props.showCookie && <Cookie />}
       </div>
   )
@@ -19,5 +18,6 @@ const mapStateToProps = (state) => {
   return {
     showCookie: state.showCookie
   }
+}
 
 export default connect(mapStateToProps)(App)
