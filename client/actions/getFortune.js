@@ -9,7 +9,7 @@ export const getFortune = () => {
     return request
       .get('http://localhost:3000/api/v1/fortunesApi')
       .then(res => {
-        dispatch(recieveFortune(res.body.text))
+        dispatch(recieveFortune(res.body.text.fortune))
       })
       .catch(err => {
         console.log(err.message)
