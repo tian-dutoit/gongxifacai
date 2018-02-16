@@ -9,10 +9,8 @@ const App = (props) => {
   return (
     <div className='app'>
       <Birthday/>
-      <h1>test</h1>
       {props.showCookie && <Cookie />}
-      <button onClick = {() => props.dispatch(showCookie())} > press to show cookie </button>
-    </div>
+      </div>
   )
 }
 
@@ -20,5 +18,6 @@ const mapStateToProps = (state) => {
   return {
     showCookie: state.showCookie
   }
+}
 
 export default connect(mapStateToProps)(App)
