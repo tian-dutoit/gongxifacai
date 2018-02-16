@@ -7,6 +7,7 @@ import {showFortune} from './showFortune'
 import {breakCookie} from './breakCookie'
 import {showBirthday} from './showBirthday'
 import {showDisplay} from './showDisplay'
+import {showHome} from './showHome'
 
 export default combineReducers({
   breakCookie,
@@ -15,5 +16,6 @@ export default combineReducers({
   showFortune,
   showZodiac,
   showBirthday,
-  showDisplay
+  showDisplay,
+  showHome
 })

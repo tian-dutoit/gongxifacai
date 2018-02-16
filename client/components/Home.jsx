@@ -1,9 +1,17 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
-const Home = () => (
-  <div className='home'>
+import {hideHome} from '../actions/hideHome'
 
-  </div>
-)
+const Home = (props) => {
+  return (
+    <div className='home'>
+      <h1 className='mainHeader'>GONG XI FA CAI</h1>
+      <h1 className='mainHeader'>恭禧發財</h1>
+      <img src='../../images/happy.png' className ='HNYimg'/>
+      <button className='HNYbutton' onClick={() => props.dispatch(hideHome())}> FIND YOUR NEW YEARS FORTUNE </button>
+    </div>
+  )
+}
 
-export default Home
+export default connect()(Home)
