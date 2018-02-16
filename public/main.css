@@ -27,7 +27,8 @@ font-family: ChineseTakeaway;
 border: none;
 position: fixed; /* or absolute */
 top: 50%;
-left: 49.5%;
+left: 44.5%;
+
 }
 
 button {
@@ -44,5 +45,36 @@ button {
   cursor: pointer;
   position: fixed; /* or absolute */
   top: 60%;
-  left: 50%;
+  left: 45%;
+}
+
+.animal {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.header {
+  text-align: center;
+  font-size: 300%;
+  position: relative;
+}
+.speechbubble > img {
+  width: 30%;
+  z-index: 1;
+  margin-left: 35%;
+}
+.speechbubble > p {
+  width: 500px;
+  height: 100.5px;
+  z-index: 2;
+  margin-left: 30%;
+  margin-top: 200px;
+}
+
+.cookie > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
 }
