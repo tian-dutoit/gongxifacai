@@ -8,7 +8,7 @@ import {showCookie} from '../actions/showCookie'
 const App = (props) => {
   return (
     <div className='app'>
-      <Birthday/>
+      {props.showBirthday && <Birthday />}
       {props.showCookie && <Cookie />}
       </div>
   )
@@ -16,7 +16,8 @@ const App = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    showCookie: state.showCookie
+    showCookie: state.showCookie,
+    showBirthday: state.showBirthday
   }
 }
 
