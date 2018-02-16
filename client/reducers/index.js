@@ -5,11 +5,14 @@ import {showCookie} from './showCookie'
 import {fortuneText} from './fortuneText'
 import {showFortune} from './showFortune'
 import {breakCookie} from './breakCookie'
+import {showBirthday} from './showBirthday'
+
 
 export default combineReducers({
   breakCookie,
   showCookie,
   fortuneText,
   showFortune,
-  showZodiac
+  showZodiac,
+  showBirthday
 })
