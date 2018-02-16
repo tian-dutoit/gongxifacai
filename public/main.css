@@ -58,18 +58,23 @@ button {
   text-align: center;
   font-size: 300%;
   position: relative;
+  text-shadow: 1px 1px#201700fb;
+  margin-top: 10px;
 }
 .speechbubble > img {
-  width: 30%;
+  width: 50%;
   z-index: 1;
-  margin-left: 35%;
+  margin-left: 20%;
+  margin-top: -35px;
 }
 .speechbubble > p {
-  width: 500px;
+  width: 400px;
   height: 100.5px;
   z-index: 2;
   margin-left: 30%;
-  margin-top: 200px;
+  margin-top: -350px;
+  font-size: 200%;
+  text-shadow: 1px 1px#201700fb
 }
 
 .cookie > img{
