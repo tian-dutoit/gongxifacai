@@ -3,21 +3,23 @@ import {connect} from 'react-redux'
 
 import Cookie from './Cookie'
 import Birthday from './Birthday'
-import {showCookie} from '../actions/showCookie'
+import Display from './Display'
 
 const App = (props) => {
   return (
     <div className='app'>
       {props.showBirthday && <Birthday />}
       {props.showCookie && <Cookie />}
-      </div>
+      {props.showDisplay && <Display />}
+    </div>
   )
 }
 
 const mapStateToProps = (state) => {
   return {
     showCookie: state.showCookie,
-    showBirthday: state.showBirthday
+    showBirthday: state.showBirthday,
+    showDisplay: state.showDisplay
   }
 }
 

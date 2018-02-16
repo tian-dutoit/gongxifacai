@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 const Display = (props) => (
   <div className='display'>
     <h1>Your Fortune</h1>
-    <img src={`../../images/${props.zodiac}`}/>
+    <img src={`../../images/${props.zodiac}.png`}/>
     <p>{props.fortuneText}</p>
   </div>
 )
