@@ -15,3 +15,34 @@ font{
   font-family: ChineseTakeaway;
   src: url("/font/CHINESETAKEAWAY.ttf");
 }
+
+.birthday > input {
+display: flex;
+width: 200px;
+height: 50px;
+color: black;
+background-color: #f3ad0885;
+font-size: 110%;
+font-family: ChineseTakeaway;
+border: none;
+position: fixed; /* or absolute */
+top: 50%;
+left: 49.5%;
+}
+
+button {
+  background-color:#f3ae08;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: ChineseTakeaway;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: fixed; /* or absolute */
+  top: 60%;
+  left: 50%;
+}
