@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Cookie from './Cookie'
 import Birthday from './Birthday'
 import Display from './Display'
+import Home from './Home'
 
 const App = (props) => {
   return (
@@ -11,6 +12,7 @@ const App = (props) => {
       {props.showBirthday && <Birthday />}
       {props.showCookie && <Cookie />}
       {props.showDisplay && <Display />}
+      {props.showHome && <Home />}
     </div>
   )
 }
@@ -19,7 +21,8 @@ const mapStateToProps = (state) => {
   return {
     showCookie: state.showCookie,
     showBirthday: state.showBirthday,
-    showDisplay: state.showDisplay
+    showDisplay: state.showDisplay,
+    showHome: state.showHome
   }
 }
 
