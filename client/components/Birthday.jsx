@@ -1,9 +1,11 @@
 import React from 'react'
 import {postBirthday} from '../api'
+import {connect} from 'react-redux'
+import {showZodiac} from '../actions/birthday'
 
 class Birthday extends React.Component {
-  constructor() {
-    super ()
+  constructor(props) {
+    super (props)
     this.state = {
       birthyear: '',
       zodiac: ''
@@ -25,10 +27,11 @@ class Birthday extends React.Component {
   }
 
   updateZodiac (zodiacAnimal) {
-    console.log(zodiacAnimal)
-    this.setState({
-      zodiac: zodiacAnimal.body.animal
-    })
+    const data = zodiacAnimal.body.animal
+    this.props.dispatch(showZodiac(data))
+    // this.setState({
+    //   zodiac: zodiacAnimal.body.animal
+    // })
 }
 
 
@@ -42,4 +45,10 @@ class Birthday extends React.Component {
   }
 }
 
-export default Birthday
+const mapStateToProps = (state) => {
+  return {
+    updateAnimal: state.animal
+  }
+}
+
+export default connect(mapStateToProps)(Birthday)
