@@ -6,4 +6,4 @@ const Display = () => (
   </div>
 )
 
-export default Display
+export default connect(mapStateToProps)(Display)
