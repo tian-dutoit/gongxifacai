@@ -19,6 +19,5 @@ const mapStateToProps = (state) => {
   return {
     showCookie: state.showCookie
   }
-}
 
 export default connect(mapStateToProps)(App)
